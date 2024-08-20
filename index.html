@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Marksheet Program</h1>
+        <form id="student-form">
+            <h2>Enter Number of Students</h2>
+            <div class="form-group">
+                <label for="num-students">Number of Students:</label>
+                <input type="number" id="num-students" min="1" max="10" required>
+            </div>
+            <button type="button" onclick="generateStudentForms()">Generate Forms</button>
+        </form>
+
+        <div id="students-forms"></div>
+        <button id="generate-report" onclick="generateReport()">Generate Report</button>
+
+        <div id="marksheets"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
